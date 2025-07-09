@@ -32,24 +32,6 @@ The project is organized as follows:
     CNN model trained with weights saved for Kaggle test
     This is for reproducibility of the Kaggle test results
 
-- full_cnn_tuning.txt
-    CNN model hyperparameter tunning results
-
-- tuned_hyperparameters.txt
-    Log file for CNN model training with the chosen set of hyperparameters
-
-- knn_pred.csv
-    KNN model predictions for Kaggle test
-
-- random_forest.csv
-    Random Forest predictions for Kaggle test
-
-- cnn_pred.csv
-    CNN model predictions for Kaggle test
-
-- perspective_transformed.png
-    Transformed image for error analysis for Random Forest & CNN
-
 - README.txt
     This file
 
