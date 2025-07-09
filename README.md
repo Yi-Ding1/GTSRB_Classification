@@ -1,51 +1,27 @@
-TRAFFIC SIGN CLASSIFICATION (2025)
-=========================================================
+# Traffic Sign Classification Using Classical and CNN Models (2025 Project)
 
-Overview:
----------
-This project aims to classify German traffic signs into one of 43 classes using extracted features. 
+## Overview  
+This project classifies German traffic signs into 43 classes using both manual feature extraction methods (HOG, color histograms, LBP, contours) and a LeNet-5 convolutional neural network. It includes feature engineering, model training, evaluation, and comparison.
 
+## Directory Structure  
+- `train/`: Contains training images  
+  - `train_metadata.csv`: Metadata file with image IDs, filenames, and class labels  
+- `test/`: Contains test images  
+  - `test_metadata.csv`: Metadata with image IDs and filenames (no labels)  
+- `traffic-sign-classification.ipynb`: Jupyter notebook containing all code for preprocessing, training, and evaluation  
+- `cnn_eval_state.pt`: Saved CNN model weights for evaluation reproducibility  
+- `cnn_kaggle_state.pt`: Saved CNN model weights for Kaggle test submission reproducibility  
+- `gtsrb-classification.pdf`: Technical report on the project methodology and results  
+- `README.md`: This file  
 
-Directory Structure:
---------------------
-The project is organized as follows:
+## Data  
+- 5488 training images with class labels  
+- 2353 test images without labels  
+- 43 total traffic sign classes  
+> *Note: Training and test images are not included and must be downloaded from [GTSRB official site](link-to-dataset)*  
 
-
-- train\
-    Folder with training image
-	- train_metadata.csv
-    		Metadata for training images (ids, image filenames and class labels)
-
-- test\
-    Folder with test images 
-	- test_metadata.csv
-    		Metadata for test images (ids, image filenames only, no labels)
-
-- traffic-sign-classification.ipynb
-    Python code for this project
-
-- cnn_eval_state.pt
-    CNN model trained with weights saved for evaluation.
-    This is for reproducibility of the test results
-
-- cnn_kaggle_state.pt
-    CNN model trained with weights saved for Kaggle test.
-    This is for reproducibility of the Kaggle test results
-
-- README.txt
-    This file
-
-Data:
------
-- 5488 training images with class labels
-- 2353 test images without labels
-- 43 total traffic sign classes
-
-
-Guideline for executing traffic-sign-classification.ipynb:
-----------------------------------------------------------
-- Python version used for this file: 3.12.7
-- Execute all cells in sequential order.
-- Cells for hyperparameter tuning can be skipped without causing an error.
-- Required external libraries: pandas, numpy, sklearn, cv2, matplotlib, PIL, torch, scipy.
-
+## Execution Instructions  
+1. Python version: 3.12.7  
+2. Install required libraries:  
+   ```bash
+   pip install pandas numpy scikit-learn opencv-python matplotlib pillow torch scipy
