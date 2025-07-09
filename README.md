@@ -18,7 +18,7 @@ This project classifies German traffic signs into 43 classes using both manual f
 - 5488 training images with class labels  
 - 2353 test images without labels  
 - 43 total traffic sign classes  
-> *Note: Training and test images are not included and must be downloaded from [GTSRB official site](link-to-dataset)*  
+> *Note: Training and test images are not included and must be downloaded from [GTSRB official site](https://benchmark.ini.rub.de/)*  
 
 ## Execution Instructions  
 1. Python version: 3.12.7  
