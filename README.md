@@ -25,11 +25,11 @@ The project is organized as follows:
     Python code for this project
 
 - cnn_eval_state.pt
-    CNN model trained with weights saved for evaluation
+    CNN model trained with weights saved for evaluation.
     This is for reproducibility of the test results
 
 - cnn_kaggle_state.pt
-    CNN model trained with weights saved for Kaggle test
+    CNN model trained with weights saved for Kaggle test.
     This is for reproducibility of the Kaggle test results
 
 - README.txt
